@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js global bin
+
+PATH: 
+  /usr/local/go/bin:/home/lukehalasy/.cargo/bin:/opt/python/3.8/bin:/home/lukehalasy/.local/bin:/home/lukehalasy/.local/kitty.app/bin:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/usr/games:/sbin:/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/lukehalasy/anchorage/source/js/tree-sitter-looker/package.json: Unexpected token ] in JSON at position 380
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "tree-sitter-looker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bindings/node",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "tree-sitter-cli": "^0.20.8"
+    },
+    "tree-sitter": [
+      {
+        "scope": "source.lookml",
+        "file-types": [
+          "lkml",
+        ],
+        "content-regex": "lmkl"
+      }
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,16 @@
+===========
+View with just one dimension
+===========
+
+view: apples {
+	sql_table_name: `heyo.apples` ;;
+	dimension: id {
+		type: string
+	}
+}
+
+-----------
+
+(source_file
+	(_view_definition
+	)) 

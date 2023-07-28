@@ -1,0 +1,24 @@
+===========
+View with a derived table
+===========
+
+view: apples {
+  derived_table: {
+    sql:
+      SELECT
+        ia.test,
+      FROM
+		ia
+    ;;
+  }
+
+	dimension: id {
+		type: string
+	}
+}
+
+-----------
+
+(source_file
+	(_view_definition
+	)) 

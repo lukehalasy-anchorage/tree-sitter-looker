@@ -1,0 +1,459 @@
+[
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "derived_table",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "derived_table_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "derived_table_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "derived_table_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "derived_table_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "derived_table_sql_query",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "derived_table_sql_query",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "dimension_definition_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "dimension_parameter",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dimension_parameter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "explore_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lookml_comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "model_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "explore_definition",
+          "named": true
+        },
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "model_definition",
+          "named": true
+        },
+        {
+          "type": "view_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sql_containing_field",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "sql_query",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sql_query",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "sql_table_name_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "sql_query",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list",
+          "named": true
+        },
+        {
+          "type": "lookml_comment",
+          "named": true
+        },
+        {
+          "type": "sql_containing_field",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "table_specification",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "derived_table",
+          "named": true
+        },
+        {
+          "type": "sql_table_name_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "view_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "view_definition_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "view_definition_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "statement",
+          "named": true
+        },
+        {
+          "type": "table_specification",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": ";;",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "assignment",
+    "named": true
+  },
+  {
+    "type": "derived_table",
+    "named": false
+  },
+  {
+    "type": "dimension",
+    "named": false
+  },
+  {
+    "type": "explore",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "no",
+    "named": false
+  },
+  {
+    "type": "sql",
+    "named": false
+  },
+  {
+    "type": "sql_always_having",
+    "named": false
+  },
+  {
+    "type": "sql_always_where",
+    "named": false
+  },
+  {
+    "type": "sql_distinct_key",
+    "named": false
+  },
+  {
+    "type": "sql_foreign_key",
+    "named": false
+  },
+  {
+    "type": "sql_on",
+    "named": false
+  },
+  {
+    "type": "sql_table_name",
+    "named": false
+  },
+  {
+    "type": "sql_where",
+    "named": false
+  },
+  {
+    "type": "view",
+    "named": false
+  },
+  {
+    "type": "yes",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
